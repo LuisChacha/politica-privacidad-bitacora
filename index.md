@@ -1,22 +1,26 @@
 # Política de Privacidad para Bitácora
 
-**Última actualización:** 27 de enero de 2026
+**Última actualización:** 18 de septiembre de 2026
 
-Esta política de privacidad describe cómo se recopila, utiliza y maneja su información personal dentro de la aplicación Bitácora.
+Esta política de privacidad describe cómo se recopila, utiliza y maneja su información personal y los permisos sensibles dentro de la aplicación Bitácora.
 
-## Información que Recopilamos
+## Información que Recopilamos y Permisos
 
-La única información personal que la aplicación puede solicitar es: dirección de correo electrónico.
+1. **Datos de Cuenta:** Recopilamos su dirección de correo electrónico para la autenticación y seguridad de su cuenta a través de Firebase.
+2. **Ubicación (GPS):** Solicitamos acceso a su ubicación para permitirle geolocalizar sus registros y asignar direcciones automáticas a sus bitácoras.
+3. **Multimedia (Cámara y Micrófono):** Solicitamos acceso a la cámara y al micrófono únicamente para permitirle adjuntar fotografías y notas de voz a sus registros de bitácora.
 
-## Cómo Usamos El Correo Electrónico
+## Cómo Usamos su Información
 
-La dirección de correo electrónico que se solicita se utiliza con el único propósito de permitirle exportar y enviarse a sí mismo los datos que solamente usted ha generado y almacenado localmente en la aplicación.
+* **Sincronización en la Nube:** El contenido de texto de sus bitácoras (descripciones, categorías y coordenadas) se sincroniza de forma segura con los servidores de Firebase (Google Cloud) para permitirle respaldar su información y acceder a ella desde sus dispositivos.
+* **Archivos Multimedia (Fotos y Audios):** Las fotografías capturadas y las notas de voz grabadas se almacenan de forma **exclusiva, local y privada** en la memoria interna de su dispositivo. La aplicación **NO transmite ni almacena estos archivos en servidores externos de nuestra propiedad**. El usuario es el único propietario de este contenido y puede optar voluntariamente por respaldarlo únicamente en su cuenta personal de Google Drive.
+* **Exportación:** Su correo se utiliza para permitirle enviarse a sí mismo los reportes generados (PDF/CSV).
 
-No almacenamos esa dirección de correo electrónico ingresada por usted, ni la compartimos con terceros, ni la utilizamos para fines de marketing o cualquier otro propósito que no sea la exportación de sus datos a petición suya.
+## Seguridad y Control de Datos
 
-## Seguridad de los Datos
-
-Todos los datos que usted genera en la aplicación se almacenan de forma local en su dispositivo. La aplicación no transmite estos datos a ningún servidor externo, a excepción del momento en que usted solicita la exportación a su correo.
+* **Almacenamiento:** Los datos se guardan de forma segura en la base de datos interna de la aplicación y en la nube de Google Cloud (Firebase).
+* **Eliminación de Datos:** Usted tiene el derecho de eliminar registros individuales o cerrar su cuenta permanentemente desde la aplicación, lo cual borrará su información de nuestros servidores.
+* **Terceros:** No compartimos ni vendemos su información a terceros. No utilizamos sus datos para fines publicitarios.
 
 ## Contacto
 
