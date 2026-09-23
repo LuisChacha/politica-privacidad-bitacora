@@ -3,39 +3,444 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Términos de Servicio - Bitácora</title>
+    <title>Términos de Servicio / Terms of Service - Bitácora</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; color: #333; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; color: #333; }
+        .lang-selector { text-align: right; margin-bottom: 20px; background: #f5f5f5; padding: 12px; border-radius: 8px; border: 1px solid #e0e0e0; }
+        select { padding: 8px 14px; font-size: 14px; border-radius: 6px; border: 1px solid #bbb; font-weight: bold; cursor: pointer; }
         h1, h2 { color: #1b5e20; }
-        .highlight { background-color: #f0f4c3; padding: 10px; border-left: 4px solid #1b5e20; margin: 10px 0; }
+        .highlight { background-color: #f0f4c3; padding: 14px; border-left: 5px solid #1b5e20; margin: 18px 0; border-radius: 4px; }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
     </style>
 </head>
 <body>
-    <h1>Términos de Servicio para Bitácora</h1>
-    <p><strong>Última actualización:</strong> 18 de septiembre de 2026</p>
 
-    <p>Al utilizar la aplicación Bitácora, usted acepta los siguientes términos y condiciones. Por favor, léalos detenidamente.</p>
-
-    <h2>1. Periodo de Prueba (Trial)</h2>
-    <p>Bitácora ofrece un periodo de prueba gratuito de siete (7) días naturales para todos los nuevos usuarios. Durante este periodo, tendrá acceso completo a todas las funcionalidades Premium de la aplicación.</p>
-
-    <h2>2. Bloqueo de Acceso y Suscripción</h2>
-    <p>Una vez finalizado el periodo de prueba de 7 días:</p>
-    <ul>
-        <li>El acceso a la creación de nuevos registros y funciones avanzadas será bloqueado automáticamente.</li>
-        <li>Para continuar utilizando la totalidad de las funciones, el usuario deberá adquirir una suscripción Premium a través de Google Play Store.</li>
-        <li>El usuario mantendrá el derecho de visualizar, borrar o exportar sus datos existentes incluso después de que expire el periodo de prueba.</li>
-    </ul>
-
-    <div class="highlight">
-        <h2>3. Política de No Reembolsos</h2>
-        <p>Dado que la aplicación ofrece un periodo de prueba completo de 7 días para evaluar todas las funcionalidades antes de realizar cualquier pago, <strong>no se realizarán reembolsos</strong> bajo ninguna circunstancia una vez procesada la compra de la suscripción Premium en Google Play.</p>
+    <div class="lang-selector">
+        <label for="language">🌐 Language / Idioma: </label>
+        <select id="language" onchange="changeLanguage()">
+            <option value="es" selected>Español</option>
+            <option value="en">English</option>
+            <option value="de">Deutsch (Alemán)</option>
+            <option value="pt">Português (Portugués)</option>
+            <option value="ko">한국어 (Coreano)</option>
+            <option value="ja">日本語 (Japonés)</option>
+            <option value="zh">中文 (Chino Simplificado)</option>
+            <option value="fr">Français (Francés)</option>
+            <option value="it">Italiano (Italiano)</option>
+            <option value="ru">Русский (Ruso)</option>
+            <option value="ca">Català (Catalán)</option>
+        </select>
     </div>
 
-    <h2>4. Responsabilidad del Usuario</h2>
-    <p>El usuario es responsable de mantener la seguridad de su cuenta vinculada (Google/Firebase). Bitácora no se hace responsable de la pérdida de datos multimedia (fotos/audios) almacenados localmente si el dispositivo se pierde, es robado o sufre daños, a menos que el usuario haya realizado respaldos periódicos en su Google Drive personal.</p>
+    <!-- 1. ESPAÑOL -->
+    <div id="lang-es" class="lang-section active">
+        <h1>Términos de Servicio - Bitácora</h1>
+        <p><strong>Última actualización:</strong> 18 de septiembre de 2026</p>
+        <p>Al utilizar la aplicación Bitácora, usted acepta los siguientes términos y condiciones. Por favor, léalos detenidamente.</p>
 
-    <h2>5. Contacto</h2>
-    <p>Si tiene alguna duda sobre estos Términos de Servicio, puede contactarnos a través del correo de asistencia indicado en la aplicación.</p>
+        <h2>1. Periodo de Prueba (Trial)</h2>
+        <p>Bitácora ofrece un periodo de prueba gratuito de siete (7) días naturales para todos los nuevos usuarios. Durante este periodo, tendrá acceso completo a todas las funcionalidades Premium de la aplicación.</p>
+
+        <h2>2. Bloqueo de Acceso y Suscripción</h2>
+        <p>Una vez finalizado el periodo de prueba de 7 días:</p>
+        <ul>
+            <li>El acceso a la creación de nuevos registros y funciones avanzadas será bloqueado automáticamente.</li>
+            <li>Para continuar utilizando la totalidad de las funciones, el usuario deberá adquirir una suscripción Premium a través de Google Play Store.</li>
+            <li>El usuario mantendrá el derecho de visualizar, borrar o exportar sus datos existentes incluso después de que expire el periodo de prueba.</li>
+        </ul>
+
+        <div class="highlight">
+            <h2>3. Política de No Reembolsos</h2>
+            <p>Dado que la aplicación ofrece un periodo de prueba completo de 7 días para evaluar todas las funcionalidades antes de realizar cualquier pago, <strong>no se realizarán reembolsos</strong> bajo ninguna circunstancia una vez procesada la compra de la suscripción Premium.</p>
+        </div>
+
+        <h2>4. Responsabilidad del Usuario</h2>
+        <ul>
+            <li>El usuario es responsable de mantener la seguridad de su cuenta vinculada (Google/Firebase).</li>
+            <li>Bitácora no se hace responsable de la pérdida de datos multimedia (fotos/audios) almacenados localmente si el dispositivo se pierde, es robado o sufre daños, a menos que el usuario haya realizado respaldos periódicos en su Google Drive personal.</li>
+        </ul>
+
+        <h2>5. Modificaciones del Servicio</h2>
+        <p>Nos reservamos el derecho de modificar o interrumpir el servicio (o cualquier parte del mismo) en cualquier momento, previa notificación a través de la aplicación o la tienda de aplicaciones.</p>
+
+        <h2>Contacto</h2>
+        <p>Si tiene alguna duda sobre estos Términos de Servicio, puede contactarnos a través del correo de asistencia indicado en la aplicación.</p>
+    </div>
+
+    <!-- 2. INGLÉS -->
+    <div id="lang-en" class="lang-section">
+        <h1>Terms of Service - Bitácora</h1>
+        <p><strong>Last updated:</strong> September 18, 2026</p>
+        <p>By using the Bitácora application, you agree to the following terms and conditions. Please read them carefully.</p>
+
+        <h2>1. Free Trial Period</h2>
+        <p>Bitácora offers a seven (7) calendar day free trial period for all new users. During this period, you will have full access to all Premium features of the application.</p>
+
+        <h2>2. Access Lock and Subscription</h2>
+        <p>Once the 7-day trial period ends:</p>
+        <ul>
+            <li>Access to creating new entries and advanced features will be locked automatically.</li>
+            <li>To continue using all features, the user must purchase a Premium subscription through the Google Play Store.</li>
+            <li>The user retains the right to view, delete, or export their existing data even after the trial period expires.</li>
+        </ul>
+
+        <div class="highlight">
+            <h2>3. No Refund Policy</h2>
+            <p>Since the application offers a full 7-day trial period to evaluate all features before making any payment, <strong>no refunds will be provided</strong> under any circumstances once the Premium subscription purchase has been processed.</p>
+        </div>
+
+        <h2>4. User Responsibility</h2>
+        <ul>
+            <li>The user is responsible for maintaining the security of their linked account (Google/Firebase).</li>
+            <li>Bitácora is not responsible for the loss of locally stored media data (photos/audio) if the device is lost, stolen, or damaged, unless the user has performed periodic backups to their personal Google Drive.</li>
+        </ul>
+
+        <h2>5. Service Modifications</h2>
+        <p>We reserve the right to modify or discontinue the service (or any part thereof) at any time, upon prior notice through the application or the app store.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions regarding these Terms of Service, you can contact us through the support email provided in the application.</p>
+    </div>
+
+    <!-- 3. ALEMÁN -->
+    <div id="lang-de" class="lang-section">
+        <h1>Nutzungsbedingungen - Bitácora</h1>
+        <p><strong>Letzte Aktualisierung:</strong> 18. September 2026</p>
+        <p>Durch die Nutzung der Anwendung Bitácora stimmen Sie den folgenden Geschäftsbedingungen zu. Bitte lesen Sie diese sorgfältig durch.</p>
+
+        <h2>1. Kostenlose Testphase (Trial)</h2>
+        <p>Bitácora bietet allen neuen Benutzern eine kostenlose Testphase von sieben (7) Kalendertagen. Während dieses Zeitraums haben Sie vollen Zugriff auf alle Premium-Funktionen der Anwendung.</p>
+
+        <h2>2. Zugangssperre und Abonnement</h2>
+        <p>Nach Ablauf der 7-tägigen Testphase:</p>
+        <ul>
+            <li>Der Zugriff auf die Erstellung neuer Einträge und erweiterter Funktionen wird automatisch gesperrt.</li>
+            <li>Um alle Funktionen weiterhin nutzen zu können, muss der Benutzer ein Premium-Abonnement über den Google Play Store erwerben.</li>
+            <li>Der Benutzer behält das Recht, seine vorhandenen Daten auch nach Ablauf der Testphase anzusehen, zu löschen oder zu exportieren.</li>
+        </ul>
+
+        <div class="highlight">
+            <h2>3. Keine Rückerstattungsrichtlinie</h2>
+            <p>Da die Anwendung eine vollständige 7-tägige Testphase bietet, um alle Funktionen vor einer Zahlung zu testen, werden nach der Bearbeitung des Kaufs des Premium-Abonnements unter keinen Umständen <strong>Rückerstattungen gewährt</strong>.</p>
+        </div>
+
+        <h2>4. Verantwortung des Benutzers</h2>
+        <ul>
+            <li>Der Benutzer ist für die Aufrechterhaltung der Sicherheit seines verknüpften Kontos (Google/Firebase) verantwortlich.</li>
+            <li>Bitácora haftet nicht für den Verlust lokal gespeicherter Mediendaten (Fotos/Audio), wenn das Gerät verloren geht, gestohlen oder beschädigt wird, es sei denn, der Benutzer hat regelmäßige Sicherungen auf seinem persönlichen Google Drive durchgeführt.</li>
+        </ul>
+
+        <h2>5. Änderungen des Dienstes</h2>
+        <p>Wir behalten uns das Recht vor, den Dienst (oder einen Teil davon) jederzeit nach vorheriger Benachrichtigung über die Anwendung oder den App Store zu ändern oder einzustellen.</p>
+
+        <h2>Kontakt</h2>
+        <p>Wenn Sie Fragen zu diesen Nutzungsbedingungen haben, können Sie uns über die in der Anwendung angegebene Support-E-Mail-Adresse kontaktieren.</p>
+    </div>
+
+    <!-- 4. PORTUGUÉS -->
+    <div id="lang-pt" class="lang-section">
+        <h1>Termos de Serviço - Bitácora</h1>
+        <p><strong>Última atualização:</strong> 18 de setembro de 2026</p>
+        <p>Ao usar o aplicativo Bitácora, você concorda com os seguintes termos e condições. Por favor, leia-os com atenção.</p>
+
+        <h2>1. Período de Teste Gratuito (Trial)</h2>
+        <p>O Bitácora oferece um período de teste gratuito de sete (7) dias corridos para todos os novos usuários. Durante este período, você terá acesso total a todas as funcionalidades Premium do aplicativo.</p>
+
+        <h2>2. Bloqueio de Acesso e Assinatura</h2>
+        <p>Após o término do período de teste de 7 dias:</p>
+        <ul>
+            <li>O acesso à criação de novos registros e funções avançadas será bloqueado automaticamente.</li>
+            <li>Para continuar usando todas as funções, o usuário deverá adquirir uma assinatura Premium através da Google Play Store.</li>
+            <li>O usuário manterá o direito de visualizar, excluir ou exportar seus dados existentes mesmo após a expiração do período de teste.</li>
+        </ul>
+
+        <div class="highlight">
+            <h2>3. Política de Não Reembolso</h2>
+            <p>Como o aplicativo oferece um período de teste completo de 7 dias para avaliar todas as funcionalidades antes de realizar qualquer pagamento, <strong>não haverá reembolsos</strong> sob nenhuma circunstância após o processamento da compra da assinatura Premium.</p>
+        </div>
+
+        <h2>4. Responsabilidade do Usuário</h2>
+        <ul>
+            <li>O usuário é responsável por manter a segurança de sua conta vinculada (Google/Firebase).</li>
+            <li>O Bitácora não se responsabiliza pela perda de dados de mídia (fotos/áudios) armazenados localmente se o dispositivo for perdido, roubado ou danificado, a menos que o usuário tenha feito backups periódicos em seu Google Drive pessoal.</li>
+        </ul>
+
+        <h2>5. Modificações do Serviço</h2>
+        <p>Reservamo-nos o direito de modificar ou descontinuar o serviço (ou qualquer parte dele) a qualquer momento, mediante aviso prévio através do aplicativo ou da loja de aplicativos.</p>
+
+        <h2>Contato</h2>
+        <p>Se você tiver alguma dúvida sobre estes Termos de Serviço, pode nos contatar através do e-mail de suporte indicado no aplicativo.</p>
+    </div>
+
+    <!-- 5. COREANO -->
+    <div id="lang-ko" class="lang-section">
+        <h1>이용약관 - Bitácora</h1>
+        <p><strong>최종 수정일:</strong> 2026년 9월 18일</p>
+        <p>Bitácora 애플리케이션을 이용함으로써 귀하는 다음 약관에 동의하게 됩니다. 주의 깊게 읽어주시기 바랍니다.</p>
+
+        <h2>1. 무료 체험 기간 (Trial)</h2>
+        <p>Bitácora는 모든 신규 사용자에게 7일간의 무료 체험 기간을 제공합니다. 이 기간 동안 애플리케이션의 모든 프리미엄 기능을 제한 없이 이용할 수 있습니다.</p>
+
+        <h2>2. 접근 제한 및 구독</h2>
+        <p>7일간의 무료 체험 기간이 종료되면:</p>
+        <ul>
+            <li>새로운 기록 작성 및 고급 기능에 대한 접근이 자동으로 차단됩니다.</li>
+            <li>모든 기능을 계속 사용하려면 사용자는 Google Play 스토어를 통해 프리미엄 구독을 구매해야 합니다.</li>
+            <li>사용자는 체험 기간이 만료된 후에도 기존 데이터를 조회, 삭제 또는 내보낼 수 있는 권리를 유지합니다.</li>
+        </ul>
+
+        <div class="highlight">
+            <h2>3. 환불 불가 방침</h2>
+            <p>본 애플리케이션은 결제 전 모든 기능을 평가할 수 있도록 7일간의 충분한 무료 체험 기간을 제공하므로, 프리미엄 구독 구매가 완료된 후에는 어떠한 경우에도 <strong>환불이 불가능합니다</strong>.</p>
+        </div>
+
+        <h2>4. 사용자의 책임</h2>
+        <ul>
+            <li>사용자는 연결된 계정(Google/Firebase)의 보안을 유지할 책임이 있습니다.</li>
+            <li>사용자가 개인 Google Drive에 정기적인 백업을 수행하지 않은 경우, 기기 분실, 도난 또는 손상으로 인한 로컬 저장 미디어 데이터(사진/음성) 손실에 대해 Bitácora는 책임을 지지 않습니다.</li>
+        </ul>
+
+        <h2>5. 서비스 변경</h2>
+        <p>당사는 애플리케이션 또는 앱 스토어를 통한 사전 통지 후 언제든지 서비스(또는 그 일부)를 변경하거나 중단할 수 있는 권리를 보유합니다.</p>
+
+        <h2>문의하기</h2>
+        <p>본 이용약관에 대해 궁금한 점이 있으시면 애플리케이션에 명시된 지원 이메일을 통해 문의해 주시기 바랍니다.</p>
+    </div>
+
+    <!-- 6. JAPONÉS -->
+    <div id="lang-ja" class="lang-section">
+        <h1>利用規約 - Bitácora</h1>
+        <p><strong>最終更新日:</strong> 2026年9月18日</p>
+        <p>Bitácora アプリケーションを使用することにより、お客様は以下の利用規約に同意したことになります。注意深くお読みください。</p>
+
+        <h2>1. 無料試用期間 (Trial)</h2>
+        <p>Bitácora は、すべての新規ユーザーに 7 日間の無料試用期間を提供します。この期間中、アプリケーションのすべてのプレミアム機能にフルアクセスできます。</p>
+
+        <h2>2. アクセス制限とサブスクリプション</h2>
+        <p>7 日間の試用期間が終了すると：</p>
+        <ul>
+            <li>新しいログの作成および高度な機能へのアクセスは自動的にブロックされます。</li>
+            <li>すべての機能を引き続き使用するには、ユーザーは Google Play ストアを通じてプレミアムサブスクリプションを購入する必要があります。</li>
+            <li>ユーザーは、試用期間が終了した後でも、既存のデータを表示、削除、またはエクスポートする権利を保持します。</li>
+        </ul>
+
+        <div class="highlight">
+            <h2>3. 返金不可のポリシー</h2>
+            <p>本アプリケーションは、支払いを行う前にすべての機能を評価できるように 7 日間の完全な無料試用期間を提供しているため、プレミアムサブスクリプションの購入処理が完了した後は、いかなる理由であっても<strong>返金は行われません</strong>。</p>
+        </div>
+
+        <h2>4. ユーザーの責任</h2>
+        <ul>
+            <li>ユーザーは、連携アカウント (Google/Firebase) のセキュリティを維持する責任があります。</li>
+            <li>ユーザーが個人の Google ドライブに定期的なバックアップを実行していない限り、デバイスの紛失、盗難、破損によるローカル保存メディアデータ (写真/音声) の損失について、Bitácora は責任を負いません。</li>
+        </ul>
+
+        <h2>5. サービスの変更</h2>
+        <p>当社は、アプリケーションまたはアプリストアを通じて事前に通知することにより、いつでもサービス (またはその一部) を変更または中止する権利を保留します。</p>
+
+        <h2>お問い合わせ</h2>
+        <p>本利用規約に関するご質問は、アプリケーション内に記載されているサポートメールアドレスまでお問い合わせください。</p>
+    </div>
+
+    <!-- 7. CHINO SIMPLIFICADO -->
+    <div id="lang-zh" class="lang-section">
+        <h1>服务条款 - Bitácora</h1>
+        <p><strong>最后更新日期：</strong> 2026年9月18日</p>
+        <p>使用 Bitácora 应用程序即表示您同意以下条款和条件。请仔细阅读。</p>
+
+        <h2>1. 免费试用期 (Trial)</h2>
+        <p>Bitácora 为所有新用户提供为期七 (7) 个自然日的免费试用期。在此期间，您将可以完全访问应用程序的所有高级功能。</p>
+
+        <h2>2. 访问限制与订阅</h2>
+        <p>7 天试用期结束后：</p>
+        <ul>
+            <li>创建新记录及使用高级功能的权限将被自动锁定。</li>
+            <li>要继续使用所有功能，用户必须通过 Google Play 商店购买 Premium 高级订阅。</li>
+            <li>即使试用期届满，用户仍保留查看、删除或导出其现有数据的权利。</li>
+        </ul>
+
+        <div class="highlight">
+            <h2>3. 不退款政策</h2>
+            <p>由于应用程序提供了完整的 7 天免费试用期供用户在付款前评估所有功能，因此在高级订阅购买处理完成后，在任何情况下均<strong>不予退款</strong>。</p>
+        </div>
+
+        <h2>4. 用户责任</h2>
+        <ul>
+            <li>用户有责任维护其关联账户（Google/Firebase）的安全。</li>
+            <li>如果设备丢失、被盗或损坏，除非用户已定期备份到其个人 Google Drive，否则 Bitácora 不对本地存储的媒体数据（照片/音频）丢失承担责任。</li>
+        </ul>
+
+        <h2>5. 服务变更</h2>
+        <p>我们保留在通过应用程序或应用商店提前通知后，随时修改或终止服务（或其任何部分）的权利。</p>
+
+        <h2>联系我们</h2>
+        <p>如果您对本服务条款有任何疑问，可以通过应用程序中提供的支持电子邮箱与我们联系。</p>
+    </div>
+
+    <!-- 8. FRANCÉS -->
+    <div id="lang-fr" class="lang-section">
+        <h1>Conditions d'utilisation - Bitácora</h1>
+        <p><strong>Dernière mise à jour :</strong> 18 septembre 2026</p>
+        <p>En utilisant l'application Bitácora, vous acceptez les conditions suivantes. Veuillez les lire attentivement.</p>
+
+        <h2>1. Période d'essai gratuite (Trial)</h2>
+        <p>Bitácora offre une période d'essai gratuite de sept (7) jours calendaires pour tous les nouveaux utilisateurs. Pendant cette période, vous aurez un accès complet à toutes les fonctionnalités Premium de l'application.</p>
+
+        <h2>2. Verrouillage de l'accès et abonnement</h2>
+        <p>Une fois la période d'essai de 7 jours terminée :</p>
+        <ul>
+            <li>L'accès à la création de nouveaux enregistrements et aux fonctionnalités avancées sera automatiquement verrouillé.</li>
+            <li>Pour continuer à utiliser toutes les fonctionnalités, l'utilisateur doit acheter un abonnement Premium via le Google Play Store.</li>
+            <li>L'utilisateur conserve le droit de consulter, supprimer ou exporter ses données existantes même après l'expiration de la période d'essai.</li>
+        </ul>
+
+        <div class="highlight">
+            <h2>3. Politique de non-remboursement</h2>
+            <p>Puisque l'application offre une période d'essai complète de 7 jours pour évaluer toutes les fonctionnalités avant tout paiement, <strong>aucun remboursement ne sera effectué</strong> en aucune circonstance une fois l'achat de l'abonnement Premium traité.</p>
+        </div>
+
+        <h2>4. Responsabilité de l'utilisateur</h2>
+        <ul>
+            <li>L'utilisateur est responsable du maintien de la sécurité de son compte associé (Google/Firebase).</li>
+            <li>Bitácora n'est pas responsable de la perte de données multimédias (photos/audio) stockées localement si l'appareil est perdu, volé ou endommagé, sauf si l'utilisateur a effectué des sauvegardes régulières sur son Google Drive personnel.</li>
+        </ul>
+
+        <h2>5. Modifications du service</h2>
+        <p>Nous nous réservons le droit de modifier ou d'interrompre le service (ou toute partie de celui-ci) à tout moment, après préavis via l'application ou le magasin d'applications.</p>
+
+        <h2>Contact</h2>
+        <p>Si vous avez des questions concernant ces conditions d'utilisation, vous pouvez nous contacter via l'adresse e-mail d'assistance indiquée dans l'application.</p>
+    </div>
+
+    <!-- 9. ITALIANO -->
+    <div id="lang-it" class="lang-section">
+        <h1>Termini di Servizio - Bitácora</h1>
+        <p><strong>Ultimo aggiornamento:</strong> 18 settembre 2026</p>
+        <p>Utilizzando l'applicazione Bitácora, accetti i seguenti termini e condizioni. Si prega di leggerli attentamente.</p>
+
+        <h2>1. Periodo di Prova Gratuito (Trial)</h2>
+        <p>Bitácora offre un periodo di prova gratuito di sette (7) giorni solari per tutti i nuovi utenti. Durante questo periodo, avrai accesso completo a tutte le funzionalità Premium dell'applicazione.</p>
+
+        <h2>2. Blocco dell'Accesso e Abbonamento</h2>
+        <p>Una volta terminato il periodo di prova di 7 giorni:</p>
+        <ul>
+            <li>L'accesso alla creazione di nuovi registri e alle funzionalità avanzate verrà bloccato automaticamente.</li>
+            <li>Per continuare a utilizzare tutte le funzionalità, l'utente dovrà acquistare un abbonamento Premium tramite Google Play Store.</li>
+            <li>L'utente manterrà il diritto di visualizzare, eliminare o esportare i propri dati esistenti anche dopo la scadenza del periodo di prova.</li>
+        </ul>
+
+        <div class="highlight">
+            <h2>3. Politica di Non Rimborso</h2>
+            <p>Poiché l'applicazione offre un periodo di prova completo di 7 giorni per valutare tutte le funzionalità prima di effettuare qualsiasi pagamento, <strong>non verranno effettuati rimborsi</strong> in nessuna circostanza una volta elaborato l'acquisto dell'abbonamento Premium.</p>
+        </div>
+
+        <h2>4. Responsabilità dell'Utente</h2>
+        <ul>
+            <li>L'utente è responsabile del mantenimento della sicurezza del proprio account collegato (Google/Firebase).</li>
+            <li>Bitácora non è responsabile per la perdita di dati multimediali (foto/audio) memorizzati localmente in caso di smarrimento, furto o danneggiamento del dispositivo, a meno che l'utente non abbia effettuato backup periodici sul proprio Google Drive personale.</li>
+        </ul>
+
+        <h2>5. Modifiche al Servizio</h2>
+        <p>Ci riserviamo il diritto di modificare o interrompere il servizio (o qualsiasi parte di esso) in qualsiasi momento, previo preavviso tramite l'applicazione o l'app store.</p>
+
+        <h2>Contatto</h2>
+        <p>In caso di domande su questi Termini di Servizio, puoi contattarci tramite l'e-mail di supporto indicata nell'applicazione.</p>
+    </div>
+
+    <!-- 10. RUSO -->
+    <div id="lang-ru" class="lang-section">
+        <h1>Условия обслуживания - Bitácora</h1>
+        <p><strong>Последнее обновление:</strong> 18 сентября 2026 г.</p>
+        <p>Используя приложение Bitácora, вы соглашаетесь со следующими условиями. Пожалуйста, внимательно прочитайте их.</p>
+
+        <h2>1. Бесплатный пробный период (Trial)</h2>
+        <p>Bitácora предоставляет бесплатный пробный период продолжительностью семь (7) календарных дней для всех новых пользователей. В течение этого периода вам будет предоставлен полный доступ ко всем функциям Premium.</p>
+
+        <h2>2. Блокировка доступа и подписка</h2>
+        <p>После окончания 7-дневного пробного периода:</p>
+        <ul>
+            <li>Доступ к созданию новых записей и расширенным функциям будет заблокирован автоматически.</li>
+            <li>Чтобы продолжить использование всех функций, пользователь должен приобрести подписку Premium через Google Play Store.</li>
+            <li>Пользователь сохраняет за собой право просматривать, удалять или экспортировать существующие данные даже после окончания пробного периода.</li>
+        </ul>
+
+        <div class="highlight">
+            <h2>3. Политика отказа от возврата средств</h2>
+            <p>Поскольку приложение предоставляет полный 7-дневный пробный период для оценки всех функций перед совершением оплаты, после обработки покупки подписки Premium <strong>возврат средств не производится</strong> ни при каких обстоятельствах.</p>
+        </div>
+
+        <h2>4. Ответственность пользователя</h2>
+        <ul>
+            <li>Пользователь несет ответственность за обеспечение безопасности своей связанной учетной записи (Google/Firebase).</li>
+            <li>Bitácora не несет ответственности за потерю медиаданных (фото/аудио), хранящихся локально, в случае утери, кражи или повреждения устройства, если только пользователь не выполнял периодическое резервное копирование на свой личный Google Диск.</li>
+        </ul>
+
+        <h2>5. Изменения в обслуживании</h2>
+        <p>Мы оставляем за собой право изменять или прекращать предоставление услуги (или любой ее части) в любое время после предварительного уведомления через приложение или магазин приложений.</p>
+
+        <h2>Контакты</h2>
+        <p>Если у вас есть какие-либо вопросы относительно настоящих Условий обслуживания, вы можете связаться с нами по электронной почте поддержки, указанной в приложении.</p>
+    </div>
+
+    <!-- 11. CATALÁN -->
+    <div id="lang-ca" class="lang-section">
+        <h1>Termes de Servei - Bitácora</h1>
+        <p><strong>Última actualització:</strong> 18 de setembre de 2026</p>
+        <p>En utilitzar l'aplicació Bitácora, accepteu els termes i condicions següents. Si us plau, llegiu-los detingudament.</p>
+
+        <h2>1. Període de Prova Gratuït (Trial)</h2>
+        <p>Bitácora ofereix un període de prova gratuït de set (7) dies naturals per a tots els nous usuaris. Durant aquest període, tindreu accés complet a totes les funcionalitats Premium de l'aplicació.</p>
+
+        <h2>2. Bloqueig d'Accés i Subscripció</h2>
+        <p>Una vegada finalitzat el període de prova de 7 dies:</p>
+        <ul>
+            <li>L'accés a la creació de nous registres i funcions avançades serà bloquejat automàticament.</li>
+            <li>Per continuar utilitzant la totalitat de les funcions, l'usuari haurà d'adquirir una subscripció Premium a través de Google Play Store.</li>
+            <li>L'usuari mantindrà el dret de visualitzar, esborrar o exportar les seves dades existents fins i tot després que expiri el període de prova.</li>
+        </ul>
+
+        <div class="highlight">
+            <h2>3. Política de No Reemborsaments</h2>
+            <p>Atès que l'aplicació ofereix un període de prova complet de 7 dies per avaluar totes les funcionalitats abans de realitzar qualsevol pagament, <strong>no es realitzaran reemborsaments</strong> sota cap circumstància una vegada processada la compra de la subscripció Premium.</p>
+        </div>
+
+        <h2>4. Responsabilitat de l'Usuari</h2>
+        <ul>
+            <li>L'usuari és responsable de mantenir la seguretat del seu compte vinculat (Google/Firebase).</li>
+            <li>Bitácora no es fa responsable de la pèrdua de dades multimèdia (fotos/àudios) emmagatzemades localment si el dispositiu es perd, és robat o pateix danys, a menys que l'usuari hagi realitzat còpies de seguretat periòdiques al seu Google Drive personal.</li>
+        </ul>
+
+        <h2>5. Modificacions del Servei</h2>
+        <p>Ens reservem el dret de modificar o interrompre el servei (o qualsevol part del mateix) en qualsevol moment, amb avís previ a través de l'aplicació o la botiga d'aplicacions.</p>
+
+        <h2>Contacte</h2>
+        <p>Si teniu algun dubte sobre aquests Termes de Servei, podeu contactar amb nosaltres a través del correu d'assistència indicat a l'aplicació.</p>
+    </div>
+
+    <script>
+        function changeLanguage() {
+            var selectedLang = document.getElementById("language").value;
+            document.querySelectorAll('.lang-section').forEach(function(el) {
+                el.classList.remove('active');
+            });
+            var target = document.getElementById('lang-' + selectedLang);
+            if (target) {
+                target.classList.add('active');
+            }
+        }
+
+        // Detección automática según el idioma del navegador
+        var userLang = (navigator.language || navigator.userLanguage || 'es').toLowerCase(); 
+        var langCode = userLang.split('-')[0];
+        
+        var supportedLangs = ['es', 'en', 'de', 'pt', 'ko', 'ja', 'zh', 'fr', 'it', 'ru', 'ca'];
+        if (supportedLangs.includes(langCode)) {
+            document.getElementById("language").value = langCode;
+            changeLanguage();
+        }
+    </script>
 </body>
 </html>
