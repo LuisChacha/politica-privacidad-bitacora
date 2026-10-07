@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Eliminación de Cuenta - Bitácora Profesional de Campo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00695C;
+            --primary-hover: #004D40;
+            --background: #0F172A;
+            --surface: #1E293B;
+            --text: #F8FAFC;
+            --text-secondary: #94A3B8;
+            --error: #EF4444;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 580px;
+            width: 100%;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2DD4BF;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .developer-badge {
+            display: inline-block;
+            background-color: rgba(45, 212, 191, 0.1);
+            color: #2DD4BF;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(45, 212, 191, 0.2);
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .app-info {
+            background-color: rgba(15, 23, 42, 0.6);
+            border-radius: 12px;
+            padding: 12px 16px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .app-info strong {
+            color: var(--text);
+        }
+
+        .warning-box {
+            background-color: rgba(239, 68, 68, 0.1);
+            border: 1px dashed var(--error);
+            border-radius: 16px;
+            padding: 16px;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        .warning-box h3 {
+            color: var(--error);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .warning-box p {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            text-align: left;
+        }
+
+        label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background-color: rgba(15, 23, 42, 0.5);
+            color: var(--text);
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 14px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .footer {
+            margin-top: 28px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .footer a {
+            color: #2DD4BF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <span>📓</span>
+            <span>Bitácora Profesional de Campo</span>
+        </div>
+
+        <div class="developer-badge">
+            Desarrollador: Luis Fernando Chacha Montenegro
+        </div>
+
+        <h1>Solicitud de Eliminación de Cuenta / Account Deletion Request</h1>
+
+        <div class="app-info">
+            <p style="margin-bottom:4px;"><strong>Aplicación / App:</strong> Bitácora Profesional de Campo</p>
+            <p style="margin-bottom:4px;"><strong>Package Name:</strong> com.bogadok.luis.bitacora</p>
+            <p style="margin-bottom:0;"><strong>Developer:</strong> Luis Fernando Chacha Montenegro</p>
+        </div>
+
+        <p>Esta página permite a los usuarios de la aplicación <strong>Bitácora Profesional de Campo</strong> solicitar la eliminación completa y permanente de su cuenta y todos los datos asociados.</p>
+
+        <div class="warning-box">
+            <h3>⚠️ Eliminación Inmediata desde la App / In-App Deletion</h3>
+            <p>También puedes eliminar tu cuenta inmediatamente desde la aplicación móvil ingresando a <strong>Mi Cuenta > Eliminar Cuenta</strong>. Se borrarán automáticamente todos tus datos de autenticación y registros de la nube.</p>
+        </div>
+
+        <form action="mailto:luischacha82@gmail.com?subject=Solicitud%20de%20Eliminación%20de%20Cuenta%20-%20Bitácora" method="post" enctype="text/plain">
+            <div>
+                <label for="email">Correo electrónico de tu cuenta / Registered Account Email:</label>
+                <input type="email" id="email" name="email" placeholder="tu-correo@ejemplo.com" required>
+            </div>
+
+            <button type="submit" style="margin-top: 12px;">Enviar Solicitud de Borrado de Cuenta</button>
+        </form>
+
+        <div class="footer">
+            <p>Soporte directo: <a href="mailto:luischacha82@gmail.com">luischacha82@gmail.com</a></p>
+            <p style="margin-top:8px;"><a href="index.html">Volver a la Política de Privacidad</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
